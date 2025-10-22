@@ -1,0 +1,13 @@
+USE wc_system;
+
+DROP TABLE IF EXISTS players;
+
+CREATE TABLE players (
+    id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    hp INT NOT NULL DEFAULT 100,
+    level INT NOT NULL DEFAULT 1,
+    money INT NOT NULL DEFAULT 0,
+    active_quest VARCHAR(50) DEFAULT NULL,
+    PRIMARY KEY (id)
+);

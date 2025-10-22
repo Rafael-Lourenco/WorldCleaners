@@ -1,0 +1,13 @@
+USE wc_system;
+
+DROP TABLE IF EXISTS enemies;
+
+CREATE TABLE enemies (
+    id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
+    hp INT NOT NULL DEFAULT 50,
+    damage INT NOT NULL DEFAULT 10,
+    drops VARCHAR(50) DEFAULT NULL,
+    type VARCHAR(50) NOT NULL,
+    PRIMARY KEY (id)
+);

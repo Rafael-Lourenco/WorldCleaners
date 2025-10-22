@@ -1,0 +1,11 @@
+USE wc_system;
+
+DROP TABLE IF EXISTS npcs;
+
+CREATE TABLE npcs (
+    id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
+    quest_type VARCHAR(50) NOT NULL,
+    npc_type VARCHAR(50) NOT NULL,
+    PRIMARY KEY (id)
+);

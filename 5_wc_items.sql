@@ -1,0 +1,10 @@
+USE wc_system;
+
+DROP TABLE IF EXISTS items;
+
+CREATE TABLE items (
+    id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
+    type VARCHAR(50) NOT NULL,
+    PRIMARY KEY (id)
+);
