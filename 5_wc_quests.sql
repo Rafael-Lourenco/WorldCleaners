@@ -1,0 +1,10 @@
+USE wc_system;
+
+DROP TABLE IF EXISTS quests;
+
+CREATE TABLE quests (
+    id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL UNIQUE,
+    description VARCHAR(100) NOT NULL,
+    PRIMARY KEY (id),
+);
