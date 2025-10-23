@@ -4,10 +4,12 @@ DROP TABLE IF EXISTS enemies;
 
 CREATE TABLE enemies (
     id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+    id_item INT(11) UNSIGNED,
     name VARCHAR(50) NOT NULL,
     hp INT NOT NULL DEFAULT 50,
     damage INT NOT NULL DEFAULT 10,
-    drops VARCHAR(50) DEFAULT NULL,
+    level INT NOT NULL DEFAULT 1,
     type VARCHAR(50) NOT NULL,
-    PRIMARY KEY (id)
+    PRIMARY KEY (id),
+    FOREIGN KEY (id_item) REFERENCES items(id)
 );
